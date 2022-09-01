@@ -2,11 +2,15 @@ import React from "react";
 import { Timeline, Events, UrlButton, ImageEvent } from "@merc/react-timeline";
 
 // projects Logo
-import L_ReactToDoList from "../../assets/img/projects/React_ToDo_List.webp";
+import L_Tesla from "../../assets/img/projects/tesla.jfif";
+import L_Amazon from "../../assets/img/projects/amazon.jpg";
+import L_Recipe from "../../assets/img/projects/recipe.jpg";
+import L_Netflix from "../../assets/img/projects/netflex.jpg";
+import L_Chat from "../../assets/img/projects/chat.jfif";
 import L_MernTipCalc from "../../assets/img/projects/beach.jpeg";
-import L_GetGitHubInfo from "../../assets/img/projects/site.jpeg";
+//import L_GetGitHubInfo from "../../assets/img/projects/site.jpeg";
 import L_SmartBrain from "../../assets/img/projects/tetris.jpeg";
-import L_RoboFriends from "../../assets/img/projects/bootstrap.jpeg";
+//import L_RoboFriends from "../../assets/img/projects/bootstrap.jpeg";
 import L_ProductHuntClone from "../../assets/img/projects/only.jpeg";
 import L_PortfolioUsingDjango from "../../assets/img/projects/proImg.jpg";
 import Accordion from "react-bootstrap/Accordion";
@@ -14,13 +18,16 @@ import Card from "react-bootstrap/Card";
 
 // skills
 import L_REACT from "../../assets/img/skills/react.svg";
-import L_NODE_JS from "../../assets/img/skills/nodejs.svg";
+//import L_NODE_JS from "../../assets/img/skills/nodejs.svg";
 import Image from "react-bootstrap/Image";
 import L_REDUX from "../../assets/img/skills/redux.svg";
 import L_HTML5 from "../../assets/img/skills/html-5.svg";
-import L_CSS3 from "../../assets/img/skills/css3.svg";
-import L_BOOTSTRAP4 from "../../assets/img/skills/bootstrap-4.svg";
+import L_SASS from "../../assets/img/skills/sass-1.svg";
+import L_BOOTSTRAP5 from "../../assets/img/skills/bootstrap-4.svg";
 import L_MATERIALUI from "../../assets/img/skills/material-ui-1.svg";
+import L_STYLED_COMPONENTS from "../../assets/img/skills/styled-components.svg";
+import L_REACT_ROUTER from "../../assets/img/skills/react-router.svg";
+import L_GIT_ICON from "../../assets/img/skills/git-icon.svg";
 
 
 import "./projects-timeline.styles.css";
@@ -31,13 +38,13 @@ const TimeLine = () => {
       <h1 className="pt-3 text-center font-details-b pb-3">PROJECTS</h1>
       <Timeline>
         <Events>
-        {/* Project: Todo List With MUI */}
+        {/* Project: Tesla With MUI */}
         <ImageEvent
-            date="01/10/2020"
+            date="01/10/2021"
             className="text-center"
-            text="React ToDo App"
-            src={L_ReactToDoList}
-            alt="React ToDo App"
+            text="Tesla Clone Website"
+            src={L_Tesla}
+            alt="Tesla Clone Website"
           >
             <div className="d-flex justify-content-between flex-column mt-1">
               <div>
@@ -53,40 +60,19 @@ const TimeLine = () => {
 
                     <Accordion.Collapse eventKey="0" className="text-left">
                       <Card.Body>
-                        <strong>Description:</strong> This is a Todo App created with React and Material UI that keeps a track of your Todos
+                        <strong>Description:</strong> This is Tesla Clone Website Responsive Design
                         <hr />
                         <strong>Features:</strong>
                         <ul className="list-styles pt-1">
-                          <li>Keeps track of your Todos</li>
-                          <li>Powered by React and Material UI</li>
+                          <li>Clone Website</li>
+                          <li>Powered by React and Material UI,Redux and styled-components</li>
                           <li>Responsive Design</li>
+                          <li>useState</li>
                         </ul>
                         <hr />
                         <strong>Tech used:</strong>
                         <ul>
-                          <li>
-                            <span className="p-2">
-                              <Image
-                                src={L_HTML5}
-                                alt="HTML 5"
-                                rounded
-                                className="image-style m-1"
-                              ></Image>{" "}
-                              HTML5
-                            </span>
-                          </li>
-                          <li>
-                            <span className="p-2">
-                              <Image
-                                src={L_CSS3}
-                                alt="CSS 3"
-                                rounded
-                                className="image-style m-1"
-                              ></Image>{" "}
-                              CSS3
-                            </span>
-                          </li>
-                          <li>
+                        <li>
                             <span className="p-2">
                               <Image
                                 src={L_REACT}
@@ -100,12 +86,58 @@ const TimeLine = () => {
                           <li>
                             <span className="p-2">
                               <Image
+                                src={L_REDUX}
+                                alt="L_REDUX"
+                                rounded
+                                className="image-style m-1"
+                              ></Image>{" "}
+                              Redux Toolkit
+                            </span>
+                          </li>
+                          <li>
+                            <span className="p-2">
+                              <Image
+                                src={L_SASS}
+                                alt="SASS"
+                                rounded
+                                className="image-style m-1"
+                              ></Image>{" "}
+                              SASS
+                            </span>
+                          </li>
+                          
+                          <li>
+                            <span className="p-2">
+                              <Image
                                 src={L_MATERIALUI}
                                 alt="Material-UI"
                                 rounded
                                 className="image-style1 m-1"
                               ></Image>{" "}
                               Material-UI
+                            </span>
+                          </li>
+
+                          <li>
+                            <span className="p-2">
+                              <Image
+                                src={L_STYLED_COMPONENTS}
+                                alt="styled_components"
+                                rounded
+                                className="image-style1 m-1"
+                              ></Image>{" "}
+                              Styled_Components
+                            </span>
+                          </li>
+                          <li>
+                            <span className="p-2">
+                              <Image
+                                src={L_REACT_ROUTER}
+                                alt="react router"
+                                rounded
+                                className="image-style1 m-1"
+                              ></Image>{" "}
+                              React_Router
                             </span>
                           </li>
                           
@@ -119,7 +151,7 @@ const TimeLine = () => {
               
               <div className="d-flex justify-content-between flex-nowrap text-center">
                 <UrlButton
-                  href="https://walewahabtodo-4a26fd.netlify.app"
+                  href="https://aquamarine-stardust-10aa9e.netlify.app/"
                   target="_blank"
                 >
                   SEE LIVE
@@ -138,9 +170,9 @@ const TimeLine = () => {
 
 {/* Project: Beach Resort */}
 <ImageEvent
-            date="16/09/2020"
+            date="16/09/2021"
             className="text-center"
-            text="Beach Resort"
+            text="Beach Resort Hotel Website"
             src={L_MernTipCalc}
             alt="Beach Resort"
           >
@@ -158,11 +190,13 @@ const TimeLine = () => {
 
                     <Accordion.Collapse eventKey="0" className="text-left">
                       <Card.Body>
-                        <strong>Description:</strong> This website is full responsive
+                        <strong>Description:</strong> This Beach Resort website is full responsive
                         <hr />
                         <strong>Features:</strong>
                         <ul className="list-styles pt-1">
                           <li>Styling with  styled components</li>
+                          <li>Redux</li>
+                          <li>Responsive Design</li>
                         </ul>
                         <hr />
                         <strong>Tech used:</strong>
@@ -181,14 +215,45 @@ const TimeLine = () => {
                           <li>
                             <span className="p-2">
                               <Image
-                                src={L_NODE_JS}
-                                alt="Node.js"
+                                src={L_REDUX}
+                                alt="L_REDUX"
+                                rounded
+                                className="image-style m-1"
+                              ></Image>{" "}
+                              React-Redux 
+                            </span>
+                          </li>
+                          <li>
+                            <span className="p-2">
+                              <Image
+                                src={L_SASS}
+                                alt="SASS"
+                                rounded
+                                className="image-style m-1"
+                              ></Image>{" "}
+                              SASS
+                            </span>
+                          </li>   
+                          <li>
+                            <span className="p-2">
+                              <Image
+                                src={L_STYLED_COMPONENTS}
+                                alt="styled_components"
                                 rounded
                                 className="image-style1 m-1"
                               ></Image>{" "}
-                              Node.js
+                              Styled_Components
                             </span>
-                          </li>                       
+                          </li>  
+                          <span className="p-2">
+                              <Image
+                                src={L_REACT_ROUTER}
+                                alt="react router"
+                                rounded
+                                className="image-style1 m-1"
+                              ></Image>{" "}
+                              React_Router
+                            </span>                 
                         </ul>
                       </Card.Body>
                     </Accordion.Collapse>
@@ -214,12 +279,12 @@ const TimeLine = () => {
             </div>
           </ImageEvent>
 
-          {/* Project: React Website */}
+          {/* Project:Netflix React Website */}
           <ImageEvent
-            date="19/07/2020"
+            date="19/07/2021"
             className="text-center"
-            text="React Website"
-            src={L_GetGitHubInfo}
+            text="Netlix Clone Movie Website"
+            src={L_Netflix}
             alt="react website"
           >
             <div className="d-flex justify-content-between flex-column mt-1">
@@ -236,11 +301,12 @@ const TimeLine = () => {
 
                     <Accordion.Collapse eventKey="0" className="text-left">
                       <Card.Body>
-                        <strong>Description:</strong> The website is fully responsive as well
+                        <strong>Description:</strong> The movies website is fully responsive
                         <hr />
                         <strong>Features:</strong>
                         <ul className="list-styles pt-1">
                           <li>Fully responsive</li>
+                          <li>React-Hooks</li>
                         </ul>
                         <hr />
                         <strong>Tech used:</strong>
@@ -259,12 +325,23 @@ const TimeLine = () => {
                           <li>
                             <span className="p-2">
                               <Image
-                                src={L_CSS3}
-                                alt="CSS 3"
+                                src={L_MATERIALUI}
+                                alt="Material-UI"
+                                rounded
+                                className="image-style1 m-1"
+                              ></Image>{" "}
+                              Material-UI
+                            </span>
+                          </li>
+                          <li>
+                            <span className="p-2">
+                              <Image
+                                src={L_SASS}
+                                alt="SASS"
                                 rounded
                                 className="image-style m-1"
                               ></Image>{" "}
-                              CSS3
+                              SASS
                             </span>
                           </li>
                           <li>
@@ -278,6 +355,15 @@ const TimeLine = () => {
                               React
                             </span>
                           </li>
+                          <span className="p-2">
+                              <Image
+                                src={L_REACT_ROUTER}
+                                alt="react router"
+                                rounded
+                                className="image-style1 m-1"
+                              ></Image>{" "}
+                              React_Router
+                            </span>
                         </ul>
                       </Card.Body>
                     </Accordion.Collapse>
@@ -286,7 +372,7 @@ const TimeLine = () => {
               </div>
               <div className="d-flex justify-content-between flex-nowrap text-center">
                 <UrlButton
-                  href="https://walewahabweb.netlify.app/"
+                  href="https://elaborate-valkyrie-55bfc9.netlify.app"
                   target="_blank"
                 >
                   SEE LIVE
@@ -304,7 +390,7 @@ const TimeLine = () => {
 
           {/* Project: Tetris Game */}
           <ImageEvent
-            date="21/01/2020"
+            date="21/01/2021"
             className="text-center"
             text="Tetris Game"
             src={L_SmartBrain}
@@ -350,12 +436,12 @@ const TimeLine = () => {
                           <li>
                             <span className="p-2">
                               <Image
-                                src={L_NODE_JS}
-                                alt="Node.js"
+                                src={L_GIT_ICON}
+                                alt="react router"
                                 rounded
                                 className="image-style1 m-1"
                               ></Image>{" "}
-                              Node.js
+                              Git Icon
                             </span>
                           </li>
                           
@@ -386,13 +472,13 @@ const TimeLine = () => {
             </div>
           </ImageEvent>
 
-          {/* Project: React Bootstrap */}
+          {/* Project:Amazon clone Website */}
 
           <ImageEvent
-            date="14/01/2020"
+            date="14/01/2021"
             className="text-center"
-            text="React Bootstrap"
-            src={L_RoboFriends}
+            text="Amazon E-Commerce Website"
+            src={L_Amazon}
             alt="React Bootstrap"
           >
             <div className="d-flex justify-content-between flex-column mt-1">
@@ -409,17 +495,28 @@ const TimeLine = () => {
 
                     <Accordion.Collapse eventKey="0" className="text-left">
                       <Card.Body>
-                        <strong>Description:</strong> Web app build with Bootstrap
+                        <strong>Description:</strong> Amazon Website build with Material-ui
                         <hr />
                         <strong>Features:</strong>
                         <ul className="list-styles pt-1">
                           <li>React Router to navigate throughout the app</li>
                           <li>Context API to manipulate data</li>
-                          <li>Bootstrap 4 to styling app</li>
+                          <li>Material ui to styling app</li>
                         </ul>
                         <hr />
                         <strong>Tech used:</strong>
                         <ul>
+                        <li>
+                            <span className="p-2">
+                              <Image
+                                src={L_MATERIALUI}
+                                alt="Material-UI"
+                                rounded
+                                className="image-style1 m-1"
+                              ></Image>{" "}
+                              Material-UI
+                            </span>
+                          </li>
                           <li>
                             <span className="p-2">
                               <Image
@@ -434,23 +531,12 @@ const TimeLine = () => {
                           <li>
                             <span className="p-2">
                               <Image
-                                src={L_CSS3}
-                                alt="CSS 3"
+                                src={L_SASS}
+                                alt="SASS"
                                 rounded
                                 className="image-style m-1"
                               ></Image>{" "}
-                              CSS3
-                            </span>
-                          </li>
-                          <li>
-                            <span className="p-2">
-                              <Image
-                                src={L_BOOTSTRAP4}
-                                alt="Bootstrap 4"
-                                rounded
-                                className="image-style m-1"
-                              ></Image>{" "}
-                              Bootstrap 4
+                              SASS
                             </span>
                           </li>
                           <li>
@@ -483,7 +569,7 @@ const TimeLine = () => {
               </div>
               <div className="d-flex justify-content-between flex-nowrap text-center">
                 <UrlButton
-                  href="https://trusting-jones-2104cf.netlify.app/"
+                  href="https://tangerine-madeleine-ce6298.netlify.app/"
                   target="_blank"
                 >
                   SEE LIVE
@@ -498,14 +584,14 @@ const TimeLine = () => {
             </div>
           </ImageEvent>
 
-          {/* Project: Bootstrap only */}
+          {/* Project: react Recipe App */}
 
           <ImageEvent
-            date="15/12/2019"
+            date="15/12/2021"
             className="text-center"
-            text="Bootstrap website"
-            src={L_ProductHuntClone}
-            alt="Bootstrap website"
+            text="Recipe App"
+            src={L_Recipe}
+            alt="recipe website"
           >
             <div className="d-flex justify-content-between flex-column mt-1">
               <div>
@@ -521,11 +607,14 @@ const TimeLine = () => {
 
                     <Accordion.Collapse eventKey="0" className="text-left">
                       <Card.Body>
-                        <strong>Description:</strong> This website is build with Bootstrap only.
+                        <strong>Description:</strong> This website App is build with React -Hooks
                         <hr />
                         <strong>Features:</strong>
                         <ul className="list-styles pt-1">
-                          <li>Bootstrap 4</li>
+                          <li>useState</li>
+                          <li>useEffect</li>
+                          <li>Axios for data fetching from API end point</li>
+                          <li>Edamam</li>
                           
                         </ul>
                         <hr />
@@ -545,25 +634,26 @@ const TimeLine = () => {
                           <li>
                             <span className="p-2">
                               <Image
-                                src={L_CSS3}
-                                alt="CSS 3"
+                                src={L_SASS}
+                                alt="SASS"
                                 rounded
                                 className="image-style m-1"
                               ></Image>{" "}
-                              CSS3
+                              SASS
                             </span>
                           </li>
                           <li>
                             <span className="p-2">
                               <Image
-                                src={L_BOOTSTRAP4}
-                                alt="Bootstrap 4"
+                                src={L_REACT}
+                                alt="React"
                                 rounded
-                                className="image-style m-1"
+                                className="image-style1 m-1"
                               ></Image>{" "}
-                              Bootstrap 4
+                              React
                             </span>
-                          </li>                         
+                          </li> 
+                                                 
                         </ul>
                       </Card.Body>
                     </Accordion.Collapse>
@@ -587,13 +677,13 @@ const TimeLine = () => {
             </div>
           </ImageEvent>
 
-          {/* Project: Portfolio using Django */}
+          {/* Project: React Chat App using Firebase */}
           <ImageEvent
-            date="07/12/2019"
+            date="15/12/2021"
             className="text-center"
-            text="Portfolio using React"
-            src={L_PortfolioUsingDjango}
-            alt="Portfolio"
+            text="Chat App"
+            src={L_Chat}
+            alt="Material website"
           >
             <div className="d-flex justify-content-between flex-column mt-1">
               <div>
@@ -609,7 +699,98 @@ const TimeLine = () => {
 
                     <Accordion.Collapse eventKey="0" className="text-left">
                       <Card.Body>
-                        <strong>Description:</strong> This is my first portfolio
+                        <strong>Description:</strong> This web App is build with Material ui and Firebase for Backend.
+                        <hr />
+                        <strong>Features:</strong>
+                        <ul className="list-styles pt-1">
+                          <li>Material-ui Icons</li>
+                          <li>React Redux</li>
+                          <li>React Google Buttton</li> 
+                          <li>Firebase Authentication</li>                          
+                        </ul>
+                        <hr />
+                        <strong>Tech used:</strong>
+                        <ul>
+                          <li>
+                            <span className="p-2">
+                              <Image
+                                src={L_HTML5}
+                                alt="HTML 5"
+                                rounded
+                                className="image-style m-1"
+                              ></Image>{" "}
+                              HTML5
+                            </span>
+                          </li>
+                          <li>
+                            <span className="p-2">
+                              <Image
+                                src={L_SASS}
+                                alt="SASS"
+                                rounded
+                                className="image-style m-1"
+                              ></Image>{" "}
+                              SASS
+                            </span>
+                          </li>
+                          <li>
+                            <span className="p-2">
+                              <Image
+                                src={L_REACT}
+                                alt="React"
+                                rounded
+                                className="image-style1 m-1"
+                              ></Image>{" "}
+                              React
+                            </span>
+                          </li>                        
+                        </ul>
+                      </Card.Body>
+                    </Accordion.Collapse>
+                  </Card>
+                </Accordion>
+              </div>
+              <div className="d-flex justify-content-between flex-nowrap text-center">
+                <UrlButton
+                  href="#"
+                  target="_blank"
+                >
+                  SOURCE CODE
+                </UrlButton>
+                <UrlButton
+                  href="https://imaginative-toffee-d0963f.netlify.app"
+                  target="_blank"
+                >
+                  SEE LIVE
+                </UrlButton>
+              </div>
+            </div>
+          </ImageEvent>
+
+
+          {/* Project: Portfolio using React Js */}
+          <ImageEvent
+            date="07/12/2021"
+            className="text-center"
+            text="My Portfolio"
+            src={L_PortfolioUsingDjango}
+            alt="portfolio"
+          >
+            <div className="d-flex justify-content-between flex-column mt-1">
+              <div>
+                <Accordion>
+                  <Card>
+                    <Accordion.Toggle
+                      as={Card.Header}
+                      eventKey="0"
+                      className="p-2 text-center accordian-main"
+                    >
+                      PROJECT DETAILS
+                    </Accordion.Toggle>
+
+                    <Accordion.Collapse eventKey="0" className="text-left">
+                      <Card.Body>
+                        <strong>Description:</strong> This is my portfolio
                         website built using Reactjs.
                         <hr />
                         <strong>Features:</strong>
@@ -639,25 +820,25 @@ const TimeLine = () => {
                           <li>
                             <span className="p-2">
                               <Image
-                                src={L_CSS3}
-                                alt="CSS 3"
+                                src={L_SASS}
+                                alt="SASS"
                                 rounded
                                 className="image-style m-1"
                               ></Image>{" "}
-                              CSS3
+                              SASS
                             </span>
                           </li>
                           <li>
                             <span className="p-2">
                               <Image
-                                src={L_BOOTSTRAP4}
-                                alt="Bootstrap 4"
+                                src={L_BOOTSTRAP5}
+                                alt="Bootstrap"
                                 rounded
-                                className="image-style m-1"
+                                className="image-style1 m-1"
                               ></Image>{" "}
-                              Bootstrap 4
+                              Bootstrap 5
                             </span>
-                          </li>
+                          </li>        
 
                           <li>
                             <span className="p-2">

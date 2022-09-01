@@ -18,28 +18,28 @@ const Experience = () => {
                 <Card.Img variant="top" className="img-resize" src={L_ACCENTURE} alt="Accenture logo" />
               </Card.Header>
               <Card.Body className="d-flex justify-content-center flex-column">
-              {/*   <div>
+                <div>
                   <Card.Title className="text-center">Software Engineer</Card.Title>
-                </div> */}
+                </div> 
                 <div>
                   <Card.Text className="text-center style">
                     <strong className="body-title-style ">Frontend Web Developer</strong>
                     <br />
-                    <strong>Technology:</strong> React JS, Bootstrap, Javascript, Wordpress
+                    <strong>Technology:</strong>Javascript, React JS, Material-ui, Bootstrap, Wordpress
                     <br />
-                    <strong>Duration:</strong> June 2018 - Present
+                    <strong>Duration:</strong> June 2019 - Present
                     <br/>
                     <strong> Description </strong>
                     <ul className="text-left">
                       <li><strong>Developed &amp; enhanced</strong> multiple features with customizability option across web application.</li>
-                      <li><strong>Developed</strong> automation system to create SQL bulk query scripts that 
+                      {/* <li><strong>Developed</strong> automation system to create SQL bulk query scripts that 
                         increased efficiency by 80% and decreased working hours from 4 hours to 2 hours per task.
-                      </li>
+                      </li> */}
                       <li><strong>Provided</strong> application maintenance while working as `Production Support`. 
                       </li>
-                      <li><strong>Performed</strong> CRUD operations on multiple databases to load/ remove data according 
+                      <li><strong>Performed</strong> CRUD operations on mangoose databases to load/ remove data according 
                       to the business requirements.</li>
-                      {/* <li><strong>Co-created</strong> React Document used as a guide for new developers.</li> */}
+                      <li><strong>Co-created</strong> React Document used as a guide for new developers.</li>
 
                     </ul>
                     

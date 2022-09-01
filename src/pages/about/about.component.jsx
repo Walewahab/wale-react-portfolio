@@ -15,14 +15,14 @@ const About = () => {
         <Container>
           <Row className="pt-3 pb-5 align-items-center">
             <Col xs={12} md={6}>
-              <Row className="justify-content-center mb-2 mr-2 ">
+              <Row className="justify-content-center mb-2 mr-2">
               <Image className="profile justify-content-end" alt="profile" src={Profile} thumbnail fluid />
               </Row>
             </Col>
             <Col xs={12} md={6}>
               <Row className=" align-items-start p-2 my-details rounded">
                 Hi there! I am <strong>&nbsp;Alebiosu Wahab Adewale</strong>
-                <br />A passionate programmer, born and brought up in Nigeria. I am a Frontend Web Developer with React.js, Redux, Bootstrap, Javascript, Node.js, and WordPress as my tech stack.
+                <br />A passionate programmer, born and brought up in Lagos,NG. I am a Javacript Developer which i'm using popular javaScript library called React.js to build website and web Application and WordPress as my tech stack.
                 <br />
                 In 2019, I successfully completed my Wordpress with specialization in Web Designer.
                 <br />
